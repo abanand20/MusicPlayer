@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_red_dark"
+    android:orientation="vertical"
+    tools:context="com.example.android.musicplayerproject.MainActivity">
+    <TextView
+        android:id="@+id/tv_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_green_dark"
+        android:text="HomePage"
+        android:gravity="center_horizontal"
+        android:textSize="24sp" />
+
+
+
+
+    <EditText
+        android:id="@+id/editText_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"></ListView>
+
+    <ScrollView
+        android:id="@+id/scrollView_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linear_bottom"
+        android:layout_below="@+id/tv_header">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+            <TextView
+                android:id="@+id/tv_header1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:background="@android:color/holo_green_dark"
+                android:text="Activity Showing New Trending,Artist and Album"
+                android:textSize="24sp" />
+
+            <TextView
+                style="@style/textView_heading"
+                android:text="New Trending(Hindi)" />
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout style="@style/linearlayout_horizontal">
+
+                    <ImageView
+                        android:id="@+id/padmavat"
+                        style="@style/imageView_style"
+
+                        android:src="@drawable/padmavat" />
+
+                    <ImageView
+                        android:id="@+id/padman"
+                        style="@style/imageView_style"
+
+                        android:src="@drawable/padman" />
+
+                    <ImageView
+                        android:id="@+id/saadi"
+                        style="@style/imageView_style"
+
+                        android:src="@drawable/saadi" />
+
+                    <ImageView
+                        style="@style/imageView_style"
+                        android:src="@drawable/tiger" />
+
+                    <ImageView
+                        style="@style/imageView_style"
+                        android:src="@drawable/barailey" />
+
+                    <ImageView
+                        style="@style/imageView_style"
+                        android:src="@drawable/toilet" />
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                style="@style/textView_heading"
+                android:text="Artists(Hindi)" />
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout style="@style/linearlayout_horizontal">
+
+                    <ImageView
+                        android:id="@+id/lata"
+                        style="@style/imageView_style"
+
+                        android:src="@drawable/lata" />
+
+                    <ImageView
+                        android:id="@+id/shreya"
+                        style="@style/imageView_style"
+
+                        android:src="@drawable/shreya" />
+
+                    <ImageView
+                        android:id="@+id/udit"
+                        style="@style/imageView_style"
+
+                        android:src="@drawable/udit" />
+
+                    <ImageView
+                        style="@style/imageView_style"
+                        android:src="@drawable/rafi" />
+
+                    <ImageView
+                        style="@style/imageView_style"
+                        android:src="@drawable/arjit" />
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                style="@style/textView_heading"
+                android:text="Albums(Hindi)" />
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout style="@style/linearlayout_horizontal">
+
+                    <ImageView
+                        android:id="@+id/kajalg"
+                        style="@style/imageView_style"
+
+                        android:src="@drawable/kajalg" />
+
+                    <ImageView
+                        android:id="@+id/salim"
+                        style="@style/imageView_style"
+
+                        android:scaleType="fitXY"
+                        android:src="@drawable/salim" />
+
+                    <ImageView
+                        android:id="@+id/chakde"
+                        style="@style/imageView_style"
+
+                        android:src="@drawable/chakde" />
+
+                    <ImageView
+                        style="@style/imageView_style"
+                        android:src="@drawable/madhuri" />
+
+                    <ImageView
+                        style="@style/imageView_style"
+                        android:src="@drawable/tapsee" />
+
+                    <ImageView
+                        style="@style/imageView_style"
+                        android:src="@drawable/hanshika" />
+
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/linear_bottom"
+        style="@style/linear_bottom"
+        android:background="@android:color/holo_green_dark">
+
+        <Button
+            android:id="@+id/home"
+            style="@style/button_home" />
+
+        <Button
+            android:id="@+id/search"
+            style="@style/button_search" />
+
+        <Button
+            android:id="@+id/queue_music"
+            style="@style/button_queue" />
+
+        <Button
+            android:id="@+id/folder"
+            style="@style/button_folder" />
+
+        <Button
+            android:id="@+id/profile"
+            style="@style/button_profile" />
+    </LinearLayout>
+</RelativeLayout>

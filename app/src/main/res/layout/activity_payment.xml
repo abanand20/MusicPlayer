@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    tools:context=".Payment">
+
+    <TextView
+        android:id="@+id/tv_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_blue_bright"
+        android:text="Activity Showing Payment Process"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/tv_payment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_header"
+        android:background="@android:color/holo_red_light"
+        android:layout_marginTop="15dp"
+        android:text="Payment Information and Details:"
+        android:textSize="24sp" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/back"
+        android:layout_below="@+id/tv_payment"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/textView_payment"
+                android:text="1.You can Click On the Buy button To Purchase any song you like. " />
+
+            <TextView
+                style="@style/textView_payment"
+                android:text="2.You have to certain amount of money for the song you purchase." />
+
+            <TextView
+                style="@style/textView_payment"
+                android:text="3.On Clicking the Buy Button You will have to select the payment method" />
+
+            <TextView
+                style="@style/textView_payment"
+                android:text="4.Payment Method Includes Credit Card,Debit Card or UPI payment Interface" />
+
+            <TextView
+                style="@style/textView_payment"
+                android:text="5.You will be redirected to android pay" />
+
+            <TextView
+                style="@style/textView_payment"
+                android:text="6.From Android Pay You Can Pay the Money" />
+
+            <TextView
+                style="@style/textView_payment"
+                android:text="7.After Paying money song will be added to the Your PlayList" />
+
+            <TextView
+                style="@style/textView_payment"
+                android:text="8.You Will Also Be Notified of Song Being Added" />
+
+            <TextView
+                style="@style/textView_payment"
+                android:text="9.Then You Can Listen To That Music Anytime" />
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/back"
+        style="@style/button_back_payment"
+        android:text="Go to home Screen" />
+</RelativeLayout>

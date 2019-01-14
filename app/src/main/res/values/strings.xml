@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">music world</string>
+    <string name="label_artist">Artist Collection</string>
+    <string name="label_album">Album</string>
+    <string name="label_newtrending">New Trending</string>
+    <string name="label_profile">Profile</string>
+    <string name="label_folder">Folder</string>
+    <string name="label_nowplaying">Now Playing</string>
+    <string name="label_payment">Payment</string>
+    <string name="search_menu">Search</string>
+    <string name="shuffle_menu">Shuffle</string>
+    <string name="share_menu">Share</string>
+    <string name="help_menu">Help</string>
+    <string name="scan_menu">Scan for nearby devices</string>
+    <string name="settings_menu">Setting</string>
+    <string name="exit_menu">Exit</string>
+    <string name="main_activity">Main Activity</string>
+    <string name="header_artists">Artist PlayList Here</string>
+    <string name="header_artist_detail">Activity that shows songs of the selected artist</string>
+    <string name="header_album">Album PlayList Here</string>
+    <string name="header_main">New trending, Artist and Album PlayList Here</string>
+    <string name="header_album_detail">Activity that shows songs of the selected album</string>
+    <string name="header_folder">All Songs Here</string>
+    <string name="header_payment">Activity that shows how to process Payment</string>
+    <string name="header_new_trending">New Trending PlayList</string>
+    <string name="header_newtrending_detail">Activity that shows new trending songs</string>
+    <string name="header_play">Activity that shows currently playing song</string>
+
+    <string name="payment_step_one">1. The checkout screen layout includes an instance of the
+        WalletFragment class set to BUY_BUTTON mode. In this mode, the fragment displays an Android
+        Pay button and sets a MaskedWalletRequest.
+    </string>
+    <string name="payment_step_two">2. When the user clicks the Android Pay button, the app sends
+        the Masked Wallet request to Android Pay, which loads the MaskedWallet.
+    </string>
+    <string name="payment_step_three">3. The onActivityResult(...) method contains an Intent which
+        in turn contains the MaskedWallet object.
+    </string>
+    <string name="payment_step_four">4. Once it has the Masked Wallet, the app constructs an
+        instance of the WalletFragment class set to SELECTION_DETAILS mode. In this mode, the
+        fragment displays user options in the UI to change the payment methods and addresses. If the
+        user changes selections, Android Pay returns a new masked wallet object.
+    </string>
+    <string name="payment_step_five">5. When the user clicks the apps confirmation button to place
+        the order, the app creates a GoogleApiClient connection and requests the Full Wallet. Again,
+        the onActivityResult(...) method contains an Intent which in turn contains the FullWallet
+        object.
+    </string>
+    <string name="payment_step_six">6. In order to process the payment, the app passes the Android
+        Pay payment credentials provided by Google in the Full Wallet to the merchant server or
+        payment gateway.
+    </string>
+    <string name="payment_step_seven">7. The end user receives a confirmation screen.</string>
+    <string name="back"><![CDATA[<]]></string>
+    <string name="rewind"><![CDATA[<<]]></string>
+    <string name="forward"><![CDATA[>>]]></string>
+    <string name="pause">||</string>
+</resources>

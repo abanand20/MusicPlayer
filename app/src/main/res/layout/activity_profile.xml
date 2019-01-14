@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_red_light"
+    tools:context="com.example.android.musicplayerproject.Profile">
+
+    <TextView
+        android:id="@+id/tv_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_blue_bright"
+        android:text="User Details Page"
+        android:gravity="center_horizontal"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv_header1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_header"
+        android:gravity="center_horizontal"
+        android:text="Activity Showing User Information"
+        android:textSize="20sp" />
+
+
+    <ImageView
+        android:id="@+id/imageView_id"
+        style="@style/textView_profile"
+        android:layout_height="200dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/tv_header1"
+        android:src="@drawable/user" />
+
+    <TextView
+        android:id="@+id/tv_header_2"
+        style="@style/textView_profile"
+        android:layout_below="@id/imageView_id"
+        android:text="Username" />
+
+    <TextView
+        android:id="@+id/tv_header_3"
+        style="@style/textView_profile"
+        android:layout_below="@id/tv_header_2"
+        android:text="Mobile Number" />
+
+    <TextView
+        android:id="@+id/tv_header_4"
+        style="@style/textView_profile"
+        android:layout_below="@id/tv_header_3"
+        android:text="Age" />
+
+    <Button
+        android:id="@+id/purchase"
+        style="@style/button_purchase_profile"
+        android:text="Buy music online" />
+
+
+    <LinearLayout
+        android:id="@+id/linear_bottom"
+        style="@style/linear_bottom">
+
+        <Button
+            android:id="@+id/home"
+            style="@style/button_home" />
+
+        <Button
+            android:id="@+id/search"
+            style="@style/button_search" />
+
+        <Button
+            android:id="@+id/queue_music"
+            style="@style/button_queue" />
+
+        <Button
+            android:id="@+id/folder"
+            style="@style/button_folder" />
+
+        <Button
+            android:id="@+id/profile"
+            style="@style/button_profile" />
+    </LinearLayout>
+
+</RelativeLayout>

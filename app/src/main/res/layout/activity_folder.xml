@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_red_light"
+    tools:context="com.example.android.musicplayerproject.Folder">
+
+    <TextView
+        android:id="@+id/text_folder"
+        style="@style/textView_header_album"
+        android:background="@android:color/holo_blue_bright"
+        android:text="Songs List" />
+
+    <TextView
+        android:id="@+id/tv_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_folder"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/dim_four"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:text="Activity showing song of selected Artist"
+        android:textSize="24sp" />
+
+
+    <EditText
+        android:id="@+id/editText_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_header"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editText_search"></ListView>
+
+    <LinearLayout
+        android:id="@+id/linear_bottom"
+        style="@style/linear_bottom">
+
+        <Button
+            android:id="@+id/home"
+            style="@style/button_home" />
+
+        <Button
+            android:id="@+id/search"
+            style="@style/button_search" />
+
+        <Button
+            android:id="@+id/queue_music"
+            style="@style/button_queue" />
+
+        <Button
+            android:id="@+id/folder"
+            style="@style/button_folder" />
+
+        <Button
+            android:id="@+id/profile"
+            style="@style/button_profile" />
+    </LinearLayout>
+</RelativeLayout>

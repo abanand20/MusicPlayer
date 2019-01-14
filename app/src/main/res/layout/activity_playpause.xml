@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlayPause">
+
+    <RelativeLayout
+        android:id="@+id/relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/linear_bottom">
+
+        <TextView
+            android:id="@+id/textview"
+            style="@style/header_nowplaying"
+            android:text="@string/header_play" />
+
+        <TextView
+            android:id="@+id/tv_song_title"
+            style="@style/songtitle_nowplaying"
+            android:text="Song Name" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_song_title"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/music" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/text_left_seek"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/replay"
+                style="@style/button_nowplaying"
+                android:background="@drawable/ic_action_replay" />
+
+            <Button
+                android:id="@+id/mute"
+                style="@style/button_nowplaying"
+                android:background="@drawable/ic_action_volume_muted" />
+
+            <Button
+                android:id="@+id/unmute"
+                style="@style/button_nowplaying"
+                android:background="@drawable/ic_action_volume_on" />
+
+            <Button
+                android:id="@+id/shuffle"
+                style="@style/button_nowplaying"
+                android:background="@drawable/ic_action_shuffle" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text_left_seek"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/seekBar"
+            android:layout_alignParentLeft="true"
+            android:text="Small Text"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/text_middle_seek"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/text_left_seek"
+            android:layout_centerHorizontal="true"
+            android:text="Medium Text"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/text_right_seek"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/seekBar"
+            android:layout_alignParentRight="true"
+            android:text="Small Text"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:visibility="invisible" />
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/linear_button"
+            android:layout_alignEnd="@+id/textview"
+            android:layout_alignLeft="@+id/textview"
+            android:layout_alignRight="@+id/textview"
+            android:layout_alignStart="@+id/textview" />
+
+        <LinearLayout
+            android:id="@+id/linear_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/previous"
+                style="@style/button_nowplaying"
+                android:background="@drawable/ic_action_previous" />
+
+            <Button
+                android:id="@+id/rewind_id"
+                style="@style/button_nowplaying"
+                android:background="@drawable/ic_action_rewind" />
+
+            <Button
+                android:id="@+id/pause_id"
+                style="@style/button_nowplaying"
+                android:background="@drawable/ic_action_pause" />
+
+            <Button
+                android:id="@+id/play_id"
+                style="@style/button_nowplaying"
+                android:background="@drawable/ic_action_play" />
+
+            <Button
+                android:id="@+id/forward"
+                style="@style/button_nowplaying"
+                android:background="@drawable/ic_action_fast_forward" />
+
+            <Button
+                android:id="@+id/next"
+                style="@style/button_nowplaying"
+                android:background="@drawable/ic_action_next" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_bottom"
+        style="@style/linear_bottom">
+
+        <Button
+            android:id="@+id/home"
+            style="@style/button_home" />
+
+        <Button
+            android:id="@+id/search"
+            style="@style/button_search" />
+
+        <Button
+            android:id="@+id/queue_music"
+            style="@style/button_queue" />
+
+        <Button
+            android:id="@+id/folder"
+            style="@style/button_folder" />
+
+        <Button
+            android:id="@+id/profile"
+            style="@style/button_profile" />
+    </LinearLayout>
+</RelativeLayout>
+
